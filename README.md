@@ -23,3 +23,7 @@ If not, then execute the following:
     docker run -it -v /path/to/rclone:/usr/bin/rclone <Docker image name/tag> /bin/sh
 
 Once you're inside the container, `rclone config` to open the rclone config wizard. It will create new `rclone.file` for you.
+
+## Background
+
+As is implied [here](https://github.com/ncw/rclone/issues/351#issuecomment-183231925), official `rclone` build is done on Linux amd64 platform, which causes the binary for that platform to be dynamic.
